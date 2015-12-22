@@ -19,11 +19,15 @@
     "illuminate/console": "~5.0|~5.1",
     "illuminate/filesystem": "~5.0|~5.1"
   },
-  "autoload": {
-    "psr-4": {
-      "Prettus\\Repository\\": "src/Prettus/Repository/"
-    }
-  },
+
+    "autoload-dev": {
+        "psr-4": {
+            "Prettus\\Repository\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
   "config": {
     "preferred-install": "dist"
   },
